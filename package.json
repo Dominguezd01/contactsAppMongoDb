@@ -2,7 +2,14 @@
   "dependencies": {
     "body-parser": "^1.20.1",
     "express": "^4.18.2",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.8.3",
+    "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.20"
+  },
+  "scripts":{
+    "start" : "node ./API/index.js",
+    "dev": "nodemon ./API/index.js"
   }
 }

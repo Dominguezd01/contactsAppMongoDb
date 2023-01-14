@@ -20,7 +20,9 @@ body{
     place-items: center;
     margin-bottom: 1em;
 }
-
+#labelErrores{
+    color: orange;
+}
 #alumnosContainer{
     display: grid;
     grid-template-columns: repeat(3, 15em);
