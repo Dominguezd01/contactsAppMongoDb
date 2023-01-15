@@ -205,17 +205,17 @@ function fetchDelete(idAl){
 
 function fetchUpdateUser(data){
     console.log(data)
-    fetch("http://127.0.0.1:3001/update",{
+    fetch("http://127.0.0.1:3001/updateUser",{
         headers: {
             "Access-Control-Allow-Origin" : "*",
             "Content-Type": "application/json",
         },
         method: "POST",
         body:JSON.stringify( {
-            id_al: `${data.idAl}`,
-            nombre: `${data.nombre}`,
-            edad: `${data.edad}`,
-            idCurso: `${data.idCurso}`
+            id_al:`${data.idAl}`,
+            nombre:`${data.nombre}`,
+            edad:`${data.edad}`,
+            id_curso:`${data.idCurso}`
         }) 
     })
 }
